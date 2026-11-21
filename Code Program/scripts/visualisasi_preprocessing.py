@@ -73,7 +73,7 @@ def main() -> None:
         path = pick(cls)
         original, box, cropped, padded, resized, normalized, aug, tensor = steps(path)
         # tensor -> tampilan (min-max per gambar, hanya untuk visualisasi)
-        t = tensor[0].numpy()
+        t = torch.as_tensor(tensor)[0].numpy()
         t = (t - t.min()) / (t.max() - t.min() + 1e-8)
         panels = [original, cropped, padded, resized, normalized, aug, t]
         for c, panel in enumerate(panels):

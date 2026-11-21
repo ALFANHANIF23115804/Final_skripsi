@@ -4,6 +4,7 @@ Code Program/external_datasets/
 Code Program/train/
 Code Program/val/
 Code Program/test/
+Code Program/arsip_dataset_lama/
 
 # Bobot model
 *.pt
