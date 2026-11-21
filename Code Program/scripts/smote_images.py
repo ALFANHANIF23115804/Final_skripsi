@@ -38,11 +38,19 @@ def smote_oversample(
     image_size: int = 224,
     k_neighbors: int = 5,
     same_plane: bool = True,
+    max_lambda: float = 0.3,
+    max_dist_percentile: float = 50.0,
     seed: int = 42,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Kembalikan (train_df + sintetis, tabel_sumber_sintetis).
 
     Kelas minoritas dinaikkan sampai sama dengan kelas terbesar.
+
+    Pembatas agar tidak muncul "bayangan ganda":
+      max_lambda          : campuran maksimal ke induk B (0.3 = hasil tetap didominasi induk A).
+      max_dist_percentile : hanya pasangan dengan jarak piksel <= persentil ini (dari semua
+                            pasangan tetangga di kelompoknya) yang boleh dicampur; 100 = tanpa
+                            penyaringan.
     """
     rng = np.random.default_rng(seed)
     output_dir = Path(output_dir)
@@ -69,28 +77,35 @@ def smote_oversample(
         usable = {g: idx for g, idx in groups.items() if len(idx) >= 2}
         if not usable:
             raise RuntimeError(f"{class_name}: tidak ada kelompok dengan >= 2 gambar untuk SMOTE.")
-        neighbours: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+        # kumpulkan pasangan (a, b, jarak) per kelompok, lalu saring pasangan yang terlalu jauh
+        pair_a: list[int] = []
+        pair_b: list[int] = []
+        pair_group: list[str] = []
         for g, idx in usable.items():
             k = min(k_neighbors, len(idx) - 1)
             nn = NearestNeighbors(n_neighbors=k + 1, algorithm="brute").fit(vectors[idx])
-            neighbours[g] = (idx, nn.kneighbors(vectors[idx], return_distance=False)[:, 1:])
+            dist, neigh = nn.kneighbors(vectors[idx])
+            dist, neigh = dist[:, 1:], neigh[:, 1:]
+            limit = np.percentile(dist, max_dist_percentile)
+            for a in range(len(idx)):
+                for col in range(neigh.shape[1]):
+                    if dist[a, col] <= limit:
+                        pair_a.append(int(idx[a]))
+                        pair_b.append(int(idx[neigh[a, col]]))
+                        pair_group.append(g)
+        if not pair_a:
+            raise RuntimeError(f"{class_name}: tidak ada pasangan tetangga yang lolos penyaringan jarak.")
 
-        # sampel dasar dipilih sebanding ukuran kelompok
-        group_names = list(usable)
-        weights = np.array([len(usable[g]) for g in group_names], dtype=float)
-        weights /= weights.sum()
         for n in range(need):
-            g = group_names[rng.choice(len(group_names), p=weights)]
-            idx, neigh = neighbours[g]
-            a = int(rng.integers(len(idx)))
-            b = int(neigh[a][rng.integers(neigh.shape[1])])
-            lam = float(rng.random())
-            vec = vectors[idx[a]] + lam * (vectors[idx[b]] - vectors[idx[a]])
+            p = int(rng.integers(len(pair_a)))
+            a, b, g = pair_a[p], pair_b[p], pair_group[p]
+            lam = float(rng.random()) * max_lambda
+            vec = vectors[a] + lam * (vectors[b] - vectors[a])
             array = np.clip(vec.reshape(image_size, image_size) * 255.0, 0, 255).astype(np.uint8)
             path = class_dir / f"smote_{class_name}_{n:04d}.png"
             Image.fromarray(array, mode="L").save(path)
-            parent_a = class_frame.loc[idx[a], "image_path"]
-            parent_b = class_frame.loc[idx[b], "image_path"]
+            parent_a = class_frame.loc[a, "image_path"]
+            parent_b = class_frame.loc[b, "image_path"]
             new_rows.append({
                 "image_path": str(path.resolve()),
                 "split": "train",
