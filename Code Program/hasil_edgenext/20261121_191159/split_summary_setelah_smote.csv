@@ -1,0 +1,5 @@
+label,train_asli,train_sintetis,train_total,validation,test
+glioma,918,234,1152,229,254
+meningioma,1048,104,1152,262,306
+no_tumor,846,306,1152,212,140
+pituitary,1152,0,1152,288,300
