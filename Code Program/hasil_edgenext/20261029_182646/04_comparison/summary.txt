@@ -1,0 +1,15 @@
+Ringkasan eksperimen EdgeNeXt BRISC2025
+
+DATASET
+- Lokasi: E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task
+- Kelas: glioma, meningioma, no_tumor, pituitary
+- Evaluasi: tingkat gambar karena patient_id tidak tersedia jelas
+
+HASIL
+- Accuracy baseline: 0.988
+- Accuracy setelah tuning: 0.988
+- Macro F1 baseline: 0.9893908010308982
+- Macro F1 setelah tuning: 0.9895610677204749
+
+File hasil tersimpan di:
+E:\CNN(Tumor otak)\Code Program\hasil_edgenext\20261029_182646

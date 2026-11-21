@@ -1,0 +1,6 @@
+true_label,predicted_label,errors,mean_confidence,min_confidence,max_confidence
+glioma,meningioma,3,0.76919301,0.6201449,0.9243406
+meningioma,glioma,3,0.8458306700000001,0.76678747,0.93280154
+meningioma,pituitary,3,0.7004858066666667,0.39136052,0.8850665
+pituitary,meningioma,2,0.728587385,0.52438617,0.9327886
+pituitary,glioma,1,0.6001183,0.6001183,0.6001183

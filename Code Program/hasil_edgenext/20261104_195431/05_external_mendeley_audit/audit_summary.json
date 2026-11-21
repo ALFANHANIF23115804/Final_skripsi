@@ -1,0 +1,21 @@
+{
+  "source": "https://data.mendeley.com/datasets/82mtzd8x72/1",
+  "doi": "10.17632/82mtzd8x72.1",
+  "raw_images_scanned": 1137,
+  "classes": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "modality_counts": {
+    "unknown": 1137
+  },
+  "t1_verified": 0,
+  "t1_candidates": 0,
+  "modality_unknown": 1137,
+  "augmentation_suspected": 0,
+  "strict_evaluation_eligible": 0,
+  "patient_id_available": false,
+  "evaluation_status": "blocked_until_T1_and_patient_metadata_are_verified"
+}

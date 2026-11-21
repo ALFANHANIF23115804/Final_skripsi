@@ -1,0 +1,6 @@
+item,count
+train_original,5000
+train_test_exact_duplicates_removed,0
+train_internal_exact_duplicates_removed,0
+train_after_cleanup,5000
+test_original_unchanged,1000

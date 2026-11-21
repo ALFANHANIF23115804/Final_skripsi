@@ -1,0 +1,3 @@
+layer,feature_height,feature_width,raw_cam_peak,area_at_or_above_0_5,top_10_percent_activation_mass,top10_probability_drop,random_probability_drop_mean,random_probability_drop_std,top10_more_influential_than_random
+stages.0.blocks.1.conv_dw,56,56,0.00011615816038101912,0.002246856689453125,0.3731304407119751,0.011332392692565918,0.00974278450012207,0.001342425348881266,True
+stages.2.blocks.5.convs.1,14,14,0.0010373032419010997,0.11940383911132812,0.41811203956604004,0.029188454151153564,0.010013580322265625,0.0025952512171021013,True

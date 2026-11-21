@@ -1,0 +1,16 @@
+# Install in a Python 3.10 environment
+numpy
+pandas
+pillow
+reportlab
+matplotlib
+seaborn
+scikit-learn
+psutil
+jupyter
+jupyterlab
+timm
+
+# Install PyTorch and torchvision using the command selected at:
+# https://pytorch.org/get-started/locally/
+

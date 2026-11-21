@@ -1,0 +1,13 @@
+image_path,true_label,predicted_label,correct,confidence,plane,confidence_band
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00229_gl_sa_t1.jpg,glioma,meningioma,False,0.9243406,sagittal,high_>0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00234_gl_sa_t1.jpg,glioma,meningioma,False,0.76309353,sagittal,medium_0.70-0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00244_gl_sa_t1.jpg,glioma,meningioma,False,0.6201449,sagittal,low_<0.70
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00281_me_ax_t1.jpg,meningioma,glioma,False,0.837903,axial,medium_0.70-0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00365_me_ax_t1.jpg,meningioma,pituitary,False,0.8250304,axial,medium_0.70-0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00367_me_ax_t1.jpg,meningioma,pituitary,False,0.8850665,axial,medium_0.70-0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00418_me_co_t1.jpg,meningioma,pituitary,False,0.39136052,coronal,low_<0.70
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00533_me_sa_t1.jpg,meningioma,glioma,False,0.93280154,sagittal,high_>0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00543_me_sa_t1.jpg,meningioma,glioma,False,0.76678747,sagittal,medium_0.70-0.90
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\pituitary\brisc2025_test_00826_pi_co_t1.jpg,pituitary,meningioma,False,0.52438617,coronal,low_<0.70
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\pituitary\brisc2025_test_00958_pi_sa_t1.jpg,pituitary,glioma,False,0.6001183,sagittal,low_<0.70
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\pituitary\brisc2025_test_00974_pi_sa_t1.jpg,pituitary,meningioma,False,0.9327886,sagittal,high_>0.90

@@ -1,0 +1,2 @@
+model_name,pretrained,drop_rate,image_size,batch_size,epochs,learning_rate,weight_decay,label_smoothing,early_stopping_patience,random_seed,trial,best_validation_macro_f1,training_seconds
+edgenext_xx_small,True,0.2,224,16,50,0.0001,0.0001,0.1,5,42,1,0.9894437078793247,5572.636502599984

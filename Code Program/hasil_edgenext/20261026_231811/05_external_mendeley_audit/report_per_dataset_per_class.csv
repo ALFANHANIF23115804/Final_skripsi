@@ -1,0 +1,5 @@
+dataset,label,raw_count,valid_image_count,after_augmentation_filter,after_overlap_filter,suspected_augmentation,t1_verified,phash_overlap,exact_sha256_overlap,strict_eval_eligible,strict_eval_excluded
+mendeley_82mtzd8x72_v1,glioma,295,295,295,91,0,0,204,0,0,295
+mendeley_82mtzd8x72_v1,meningioma,277,277,277,78,0,0,199,0,0,277
+mendeley_82mtzd8x72_v1,no_tumor,291,291,291,210,0,0,81,0,0,291
+mendeley_82mtzd8x72_v1,pituitary,274,274,274,2,0,0,272,0,0,274

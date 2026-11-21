@@ -1,0 +1,12 @@
+image_path,true_label,predicted_label,confidence,correct,true_label_id,predicted_label_id,prob_glioma,prob_meningioma,prob_no_tumor,prob_pituitary,needs_review
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00234_gl_sa_t1.jpg,glioma,meningioma,0.8272344,False,0,1,0.1725563,0.8272344,0.00010352643,0.00010579513,True
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00229_gl_sa_t1.jpg,glioma,meningioma,0.99987894,False,0,1,4.5986766e-05,0.99987894,3.9103354e-05,3.5956786e-05,False
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\glioma\brisc2025_test_00060_gl_ax_t1.jpg,glioma,pituitary,0.99776256,False,0,3,0.0020098563,0.00014098306,8.665504e-05,0.99776256,False
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00543_me_sa_t1.jpg,meningioma,glioma,0.66148055,False,1,0,0.66148055,0.33807474,0.000257067,0.00018759709,True
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00418_me_co_t1.jpg,meningioma,glioma,0.89721394,False,1,0,0.89721394,0.0055148616,9.515644e-05,0.09717609,True
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00533_me_sa_t1.jpg,meningioma,glioma,0.9583489,False,1,0,0.9583489,0.04155895,4.939746e-05,4.283799e-05,False
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00281_me_ax_t1.jpg,meningioma,glioma,0.99489796,False,1,0,0.99489796,0.0019091114,0.0031119678,8.097802e-05,False
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00367_me_ax_t1.jpg,meningioma,pituitary,0.7219416,False,1,3,7.404121e-05,0.27762887,0.00035555306,0.7219416,True
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\meningioma\brisc2025_test_00365_me_ax_t1.jpg,meningioma,pituitary,0.9992006,False,1,3,1.382467e-05,0.00075101387,3.451723e-05,0.9992006,False
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\pituitary\brisc2025_test_00826_pi_co_t1.jpg,pituitary,meningioma,0.6397704,False,3,1,0.00017993862,0.6397704,0.00017625066,0.35987335,True
+E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task\test\pituitary\brisc2025_test_00974_pi_sa_t1.jpg,pituitary,meningioma,0.9996668,False,3,1,0.0002321126,0.9996668,2.79765e-05,7.311397e-05,False

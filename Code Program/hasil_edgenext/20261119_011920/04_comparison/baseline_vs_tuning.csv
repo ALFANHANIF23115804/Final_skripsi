@@ -1,0 +1,15 @@
+Metrik,EdgeNeXt baseline,EdgeNeXt setelah tuning
+Accuracy,0.989,0.99
+Precision macro,0.9904456263197937,0.9912768612177386
+Recall rata-rata,0.9903113581390561,0.9912956101075601
+Macro F1-score,0.9903741413942,0.9912848894809281
+ROC-AUC OVR macro,0.9988983484642321,0.998183060829147
+Waktu fit model utama (detik),7215.5052424999885,5572.636502599984
+Waktu trial tuning total (detik),0.0,5572.636502599984
+Total waktu training termasuk tuning (detik),7215.5052424999885,11145.273005199968
+Waktu evaluasi end-to-end (detik),37.13893980003195,26.297859299986158
+Waktu inferensi per gambar (ms),37.13893980003195,26.297859299986158
+GPU memory puncak (MB),367.92,376.82
+RAM proses setelah fit (MB),134.25,131.96
+Jumlah parameter,1158892.0,1158892.0
+Ukuran model (MB),4.4763,4.4763

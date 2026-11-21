@@ -1,0 +1,4 @@
+confidence_band,errors
+low_<0.70,4
+medium_0.70-0.90,5
+high_>0.90,3

@@ -1,0 +1,6 @@
+true_label,predicted_label,count
+meningioma,glioma,4
+glioma,meningioma,3
+glioma,pituitary,2
+meningioma,pituitary,2
+pituitary,meningioma,1

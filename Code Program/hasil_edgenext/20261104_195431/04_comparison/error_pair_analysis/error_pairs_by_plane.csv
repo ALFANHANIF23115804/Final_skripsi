@@ -1,0 +1,9 @@
+true_label,predicted_label,plane,errors
+glioma,meningioma,sagittal,3
+meningioma,glioma,sagittal,2
+meningioma,pituitary,axial,2
+meningioma,glioma,axial,1
+meningioma,pituitary,coronal,1
+pituitary,glioma,sagittal,1
+pituitary,meningioma,coronal,1
+pituitary,meningioma,sagittal,1

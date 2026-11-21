@@ -1,0 +1,30 @@
+{
+  "accuracy": 0.988,
+  "balanced_accuracy": 0.9893434460398333,
+  "matthews_correlation_coefficient": 0.9836207535971354,
+  "precision_macro": 0.9894576271128256,
+  "recall_macro": 0.9893434460398333,
+  "specificity_macro": 0.9957900238075003,
+  "macro_f1": 0.9893908010308982,
+  "precision_weighted": 0.9879974778942426,
+  "recall_weighted": 0.988,
+  "specificity_weighted": 0.9951600952300012,
+  "weighted_f1": 0.9879871686286774,
+  "roc_auc_ovr_macro": 0.9993929377006615,
+  "pr_auc_ovr_macro": 0.9984632077486981,
+  "support_total": 1000,
+  "inference_seconds": 17.03589800000009,
+  "inference_ms_per_image": 17.03589800000009,
+  "checkpoint": "E:\\CNN(Tumor otak)\\Code Program\\hasil_edgenext\\20261104_195431\\01_baseline\\best_model.pt",
+  "data_dir": "E:\\CNN(Tumor otak)\\Code Program\\brisc2025-v6\\brisc2025\\classification_task",
+  "image_size": 224,
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "test_count": 1000,
+  "misclassified_count": 12,
+  "lowest_confidence": 0.5370838046073914
+}

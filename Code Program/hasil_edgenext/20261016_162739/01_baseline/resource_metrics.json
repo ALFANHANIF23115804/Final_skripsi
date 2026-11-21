@@ -1,0 +1,10 @@
+{
+  "training_seconds": 1383.2081927000545,
+  "process_ram_before_mb": 178.48,
+  "process_ram_after_mb": 148.97,
+  "peak_gpu_memory_mb": 431.89,
+  "total_parameters": 1158892,
+  "trainable_parameters": 1158892,
+  "model_file_mb": 4.4763,
+  "best_validation_macro_f1": 0.9882807863066861
+}

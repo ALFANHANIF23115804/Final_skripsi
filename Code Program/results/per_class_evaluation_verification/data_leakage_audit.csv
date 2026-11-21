@@ -1,0 +1,13 @@
+check,value,status
+dataset_dir,E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\classification_task,observed
+train_images,5000,observed
+test_images,1000,observed
+exact_sha256_overlap_train_test,7,raw_dataset_observation
+exact_sha256_overlap_effective_training_test,0,pass
+training_rows_removed_by_test_hash_deduplication,9,not_used_for_training
+training_rows_removed_by_internal_hash_deduplication,36,not_used_for_training
+training_rows_after_notebook_hash_cleanup,4955,effective_training_input_reference
+patient_or_group_columns,not_available,observed
+patient_or_group_overlap_train_test,not_available,pass
+manifest,E:\CNN(Tumor otak)\Code Program\brisc2025-v6\brisc2025\manifest.csv,observed
+leakage_note,manifest tidak memiliki patient_id/subject_id/group_id/study_id,note

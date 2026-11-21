@@ -1,0 +1,25 @@
+{
+  "checkpoint": "E:\\CNN(Tumor otak)\\Code Program\\hasil_edgenext\\20261104_195431\\01_baseline\\best_model.pt",
+  "model_name": "edgenext_xx_small",
+  "config": {
+    "model_name": "edgenext_xx_small",
+    "pretrained": true,
+    "drop_rate": 0.0,
+    "label_smoothing": 0.0,
+    "image_size": 224,
+    "batch_size": 16,
+    "epochs": 40,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 8
+  },
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "device": "cuda",
+  "total_parameters": 1158892,
+  "trainable_parameters": 1158892
+}

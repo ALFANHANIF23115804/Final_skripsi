@@ -1,0 +1,55 @@
+{
+  "project_root": "E:\\CNN(Tumor otak)\\Code Program",
+  "data_dir": "E:\\CNN(Tumor otak)\\Code Program\\brisc2025-v6\\brisc2025\\classification_task",
+  "external_mendeley_root": "E:\\CNN(Tumor otak)\\Code Program\\external_datasets\\mendeley_82mtzd8x72_v1",
+  "external_mendeley_raw": "E:\\CNN(Tumor otak)\\Code Program\\external_datasets\\mendeley_82mtzd8x72_v1\\raw",
+  "external_audit_script": "E:\\CNN(Tumor otak)\\Code Program\\scripts\\prepare_mendeley_external.py",
+  "output_root": "E:\\CNN(Tumor otak)\\Code Program\\hasil_edgenext",
+  "run_root": "E:\\CNN(Tumor otak)\\Code Program\\hasil_edgenext\\20261026_231811",
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "random_seed": 42,
+  "device": "cuda",
+  "baseline_config": {
+    "model_name": "edgenext_xx_small",
+    "pretrained": true,
+    "drop_rate": 0.0,
+    "label_smoothing": 0.0,
+    "image_size": 224,
+    "batch_size": 16,
+    "epochs": 40,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 8
+  },
+  "best_tuning_config": {
+    "model_name": "edgenext_xx_small",
+    "pretrained": true,
+    "drop_rate": 0.2,
+    "image_size": 224,
+    "batch_size": 16,
+    "epochs": 80,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.1,
+    "early_stopping_patience": 8
+  },
+  "final_config": {
+    "model_name": "edgenext_xx_small",
+    "pretrained": true,
+    "drop_rate": 0.2,
+    "image_size": 224,
+    "batch_size": 16,
+    "epochs": 80,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.1,
+    "early_stopping_patience": 8
+  },
+  "data_quality_report": "E:\\CNN(Tumor otak)\\Code Program\\hasil_edgenext\\20261026_231811\\data_quality_report.csv",
+  "limitation": "Dataset berupa JPG 2D dan tidak menyediakan patient_id yang jelas. Evaluasi dilakukan pada tingkat gambar; pembersihan hash hanya menghapus duplikat identik, sehingga pemisahan pada tingkat pasien belum dapat dijamin. Dataset eksternal Mendeley tidak boleh digunakan sebagai evaluasi strict sebelum T1-kontras dan patient/group metadata diverifikasi."
+}

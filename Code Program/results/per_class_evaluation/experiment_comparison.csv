@@ -1,0 +1,8 @@
+experiment,change,status,macro_f1,balanced_accuracy,recall_glioma,recall_meningioma,recall_no_tumor,recall_pituitary
+baseline_existing_checkpoint,none,completed,0.9893908010308982,0.9893434460398333,0.9803149606299213,0.9803921568627451,1.0,0.9966666666666667
+class_weight,CrossEntropyLoss(class weights only),not_run,,,,,,
+focal_loss,Focal loss only,not_run,,,,,,
+data_augmentation,Augmentation policy only,not_run,,,,,,
+minority_oversampling,WeightedRandomSampler only,not_run,,,,,,
+clahe_contrast,CLAHE/contrast preprocessing only,not_run,,,,,,
+image_size,"Image size only, e.g. 256 or 288",not_run,,,,,,

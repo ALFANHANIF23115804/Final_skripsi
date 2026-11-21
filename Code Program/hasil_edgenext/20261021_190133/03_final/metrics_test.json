@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.993,
+  "evaluated_classes": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "precision_macro": 0.992971029246104,
+  "recall_macro": 0.9940811075086202,
+  "macro_f1": 0.9935205989471892,
+  "inference_seconds": 44.40583509998396,
+  "inference_ms_per_image": 44.40583509998396,
+  "roc_auc_ovr_by_class": {
+    "glioma": 0.9964904688522516,
+    "meningioma": 0.9972076246444784,
+    "no_tumor": 1.0,
+    "pituitary": 0.996495238095238
+  },
+  "roc_auc_ovr_macro": 0.997548332897992
+}
